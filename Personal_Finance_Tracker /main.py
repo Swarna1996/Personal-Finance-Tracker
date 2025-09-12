@@ -6,10 +6,10 @@ from datetime import datetime
 class CSV:
     CSV_FILE = "finance_data.csv"
     COLUMNS = [
-        "Date",
-        "Open",
-        "High",
-        "Low",
+        "date",
+        "amount",
+        "category",
+        "description",
     ]
 
     @classmethod
@@ -34,3 +34,4 @@ class CSV:
         print("Entry added successfully")
 
 CSV.initialize_csv()
+CSV.add_entry("20-07-2025",33,"Income","walmart")
